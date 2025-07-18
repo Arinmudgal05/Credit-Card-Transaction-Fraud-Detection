@@ -39,13 +39,6 @@ These models are well-suited for **imbalanced datasets** and are effective for a
 
 ---
 
-## ⚙️ How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/fraud-detection.git
-   cd fraud-detection
-
 
 
 
