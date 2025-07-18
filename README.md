@@ -1,30 +1,51 @@
 # Credit-Card-Transaction-Fraud-Detection
-# 🧠 Breast Cancer Detection using Decision Tree & Random Forest
+# 💳 Credit Card Fraud Detection using Anomaly Detection Techniques
 
-This project aims to **detect breast cancer** using machine learning algorithms applied to the **Wisconsin Breast Cancer Dataset**. Early detection of breast cancer is crucial for effective treatment, and this project explores two powerful classification models — **Decision Tree** and **Random Forest** — to predict whether a tumor is **benign** or **malignant** based on various cell features.
+This project focuses on identifying fraudulent transactions from credit card data using **unsupervised anomaly detection algorithms**. With the exponential growth in online transactions, it's critical to build models that can detect unusual patterns that may signify **financial fraud**.
 
-This notebook demonstrates the full workflow from data loading, preprocessing, visualization, model building, evaluation, and performance comparison.
+---
+
+## 🧠 Project Overview
+
+- The dataset used contains credit card transactions made by European cardholders.
+- It includes only numerical input variables resulting from a **PCA transformation**.
+- The goal is to **detect frauds** using methods such as:
+  - Isolation Forest
+  - Local Outlier Factor (LOF)
+  - One-Class SVM (SGDOneClassSVM)
+
+These models are well-suited for **imbalanced datasets** and are effective for anomaly detection in high-dimensional spaces.
 
 ---
 
 ## 📂 Dataset
 
-The dataset contains features computed from digitized images of a fine needle aspirate (FNA) of a breast mass. It includes:
+- The dataset (`creditcard.csv`) includes:
+  - **Time**: Seconds elapsed between each transaction
+  - **Amount**: Transaction amount
+  - **V1–V28**: PCA-transformed features
+  - **Class**: `0` for non-fraud, `1` for fraud
 
-- 10 numeric attributes related to characteristics of the cell nuclei.
-- 1 target variable:  
-  - `M` = Malignant (cancerous)  
-  - `B` = Benign (non-cancerous)
+> 📉 Note: The dataset is highly imbalanced (fraud cases are ~0.17%).
+
 ---
 
 ## 🛠️ Technologies Used
 
-- **Programming Language**: Python
-- **Libraries**:
-  - `NumPy` for numerical operations
-  - `Pandas` for data handling
-  - `Matplotlib` for data visualization
-  - `Scikit-learn` for machine learning models
+- **Python 3.x**
+- **Pandas, NumPy** – data handling
+- **Seaborn, Matplotlib** – visualization
+- **Scikit-learn** – modeling and evaluation
 
 ---
+
+## ⚙️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/fraud-detection.git
+   cd fraud-detection
+
+
+
 
